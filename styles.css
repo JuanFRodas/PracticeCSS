@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(230, 235, 213);
+}
+
+header{
+    margin: 8vh;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(243, 219, 187);
+}
+
+header div{
+    font-size: 3vh;
+    text-align: center;
+    align-content: center;
+    height: 6vh;
+    width: 30vw;
+    border: 1px solid;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 58vh;
+    justify-content: space-around;
+}
+  
+
+section .img{
+    width: 45%;
+    display: flex;
+    justify-content:right;
+    align-items:center;
+}
+
+
+
+section .text{
+    font-family:arial;
+    margin-right: 4vw;
+    margin-top: 6vh;
+    font-size: 3.2vh;
+    text-align: center;
+    letter-spacing: 0.4px;
+    width: 55%;
+}
+
+section img{
+    width: 55%;
+    height: 70%;
+    padding-right: 15vh;
+}
+
+hr {
+    height: 1px;
+}
+
+footer{
+    height: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div img{
+    filter: brightness(0) saturate(100%);
+}
+
+
+/* ---------- PANTALLAS DE MEDIANO TAMAÑO ---------------*/
+
+@media (min-width: 601px) and (max-width: 900px) {
+    section .text {
+      font-size: 2.6vh;
+    }
+  }
+
+@media (min-width: 601px) and (max-width: 900px) {
+    section div img {
+        width: 80%;
+        height: 65%;
+        padding-right: 5vh;
+        padding-left: 6vh;
+    }
+  }
+
+
+ /* ------------ PANTALLAS MOVILES -------------*/ 
+
+
+
+@media (max-width: 600px) {
+    section { 
+      display: flex;
+      width: 100%;
+      height: 65vh;
+      flex-wrap: wrap;
+    }
+  }
+
+@media (max-width: 600px) {
+    section .img { 
+        display: flex;
+        width: 78%;
+        height: 45%;
+        justify-content: center;
+        padding-left: 15vw;
+        margin-top: -6vh;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    section .text { 
+      display: flex;
+      width: 80%;
+      height: 50%;
+      align-items:normal;  
+      
+      margin: 0px;
+      font-size: 2.6vh;
+      margin-top: -12vh;
+    }
+  }
+
+@media (max-width: 600px) {
+    section img { 
+      width: 60%;
+      height: 80%;
+    }
+  }
